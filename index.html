@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolau Martin-Bassols – Economist</title>
+  <meta name="description" content="Nicolau Martin-Bassols – Post-doctoral Research Fellow at the University of Bologna. Applied microeconomics, health economics, social genomics." />
+  <meta name="keywords" content="Nicolau Martin-Bassols, economist, health economics, microeconomics, social genomics, University of Bologna, Monash University" />
+  <meta name="author" content="Nicolau Martin-Bassols" />
+  <!-- Open Graph (for sharing / Google preview) -->
+  <meta property="og:title" content="Nicolau Martin-Bassols" />
+  <meta property="og:description" content="Post-doctoral Research Fellow at the University of Bologna. Applied microeconomics, health economics, social genomics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nicomartin1992.github.io/" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    a { color: #1a5fa8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .page { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+    /* Nav */
+    nav {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5e5e5;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-size: 14px;
+      color: #555;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    nav a:hover { background: #f3f3f3; color: #111; text-decoration: none; }
+    nav a.active { background: #1a1a1a; color: #fff; }
+
+    /* Hero */
+    .hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
+    .avatar {
+      width: 110px; height: 110px; border-radius: 50%;
+      background: #dbe9f9; display: flex; align-items: center; justify-content: center;
+      font-size: 26px; font-weight: 500; color: #1a5fa8; flex-shrink: 0;
+      border: 1px solid #c8dcf0; overflow: hidden;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-text h1 { font-size: 22px; font-weight: 600; margin-bottom: 3px; }
+    .hero-text .role { font-size: 14px; color: #666; margin-bottom: 14px; }
+    .hero-text .bio { font-size: 15px; color: #222; }
+    .hero-text .address { font-size: 13px; color: #888; margin-top: 10px; }
+    .contact-row { display: flex; gap: 1rem; margin-top: 10px; flex-wrap: wrap; }
+    .contact-row a { font-size: 13px; }
+
+    /* Sections */
+    .section { display: none; }
+    .section.active { display: block; }
+    h2 { font-size: 19px; font-weight: 600; margin-bottom: 1.25rem; }
+
+    /* Publications */
+    .pub { padding: 14px 0; border-bottom: 1px solid #efefef; }
+    .pub:last-child { border-bottom: none; }
+    .pub-number { font-size: 12px; color: #aaa; margin-bottom: 3px; }
+    .pub-title { font-size: 15px; font-weight: 500; color: #111; line-height: 1.5; }
+    .pub-authors { font-size: 13px; color: #555; margin-top: 3px; }
+    .pub-journal { font-size: 13px; color: #333; font-style: italic; margin-top: 2px; }
+    .pub-links { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .pub-links a {
+      font-size: 12px; color: #1a5fa8; background: #eaf1fb;
+      padding: 2px 9px; border-radius: 4px; border: 1px solid #c8dcf0;
+    }
+    .pub-links a:hover { background: #d2e5f7; text-decoration: none; }
+    .badge {
+      display: inline-block; font-size: 11px; background: #fff7e6; color: #8a5a00;
+      border: 1px solid #f0d080; padding: 1px 7px; border-radius: 4px; margin-left: 8px;
+      vertical-align: middle; font-style: normal;
+    }
+
+    /* CV section */
+    .cv-placeholder {
+      background: #f9f9f9; border: 1px dashed #ddd; border-radius: 8px;
+      padding: 2rem; text-align: center; color: #777; font-size: 15px;
+    }
+    .cv-placeholder a {
+      display: inline-block; margin-top: 12px; background: #1a1a1a; color: #fff;
+      padding: 8px 20px; border-radius: 6px; font-size: 14px;
+    }
+    .cv-placeholder a:hover { background: #333; text-decoration: none; }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem; padding-top: 1.5rem;
+      border-top: 1px solid #efefef;
+      font-size: 12px; color: #aaa; text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .hero { flex-direction: column; }
+      .avatar { width: 80px; height: 80px; font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <nav id="nav">
+    <a class="active" onclick="show('home', this)">About</a>
+    <a onclick="show('pubs', this)">Publications</a>
+    <a onclick="show('working', this)">Working papers</a>
+    <a onclick="show('progress', this)">Work in progress</a>
+    <a onclick="show('cv', this)">CV</a>
+  </nav>
+
+  <!-- ── ABOUT ── -->
+  <div id="home" class="section active">
+    <div class="hero">
+      <!-- Replace the initials div below with: <img src="photo.jpg" alt="Nicolau Martin-Bassols"> inside the .avatar div once you add your photo -->
+      <div class="avatar">NMB</div>
+      <div class="hero-text">
+        <h1>Nicolau Martin-Bassols</h1>
+        <p class="role">Post-doctoral Research Fellow · Department of Economics · University of Bologna</p>
+        <p class="bio">
+          I obtained my PhD from Monash University's Centre of Health Economics in 2022.
+          I specialize in applied microeconomics and micro-econometrics, with a focus on health,
+          labor economics, and social genomics. My research explores the impact of genetics,
+          familial investments, and policy interventions on the construction of health and human
+          capital, as well as economic disparities.
+        </p>
+        <p class="address">Piazza Antoni Scaravilli, 2, 40126 Bologna, Italy</p>
+        <div class="contact-row">
+          <a href="mailto:nicolau.martin@unibo.it">nicolau.martin@unibo.it</a>
+          <a href="https://github.com/nicomartin1992" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PUBLICATIONS ── -->
+  <div id="pubs" class="section">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">Socioeconomic advantage as protection from genetic mental health risks</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, J. P., de New, S. C., &amp; Wong, C. C.</div>
+      <div class="pub-journal">Social Science &amp; Medicine (2025), 118845</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Drug prices after patent expirations in high-income countries and implications for cost-effectiveness analyses</div>
+      <div class="pub-authors">Serra-Burriel, M., Martin-Bassols, N., Perényi, G., &amp; Vokinger, K. N.</div>
+      <div class="pub-journal">JAMA Health Forum (2024), Vol. 5, No. 8, e242530</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(3)</div>
+      <div class="pub-title">Effect of in utero exposure to air pollution on adulthood hospitalizations</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, S. C., Shields, M. A., &amp; Johnston, D. W.</div>
+      <div class="pub-journal">Journal of Urban Health (2024), 101(1), 92–108</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(4)</div>
+      <div class="pub-title">Risky and non-risky financial investments and cognition</div>
+      <div class="pub-authors">Martin-Bassols, N.</div>
+      <div class="pub-journal">Journal of Economic Psychology (2023), 102677</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(5)</div>
+      <div class="pub-title">Cognitive activity at work and the risk of dementia</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, S. C., Johnston, D. W., &amp; Shields, M. A.</div>
+      <div class="pub-journal">Health Economics (2023), 32(7), 1561–1580</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(6)</div>
+      <div class="pub-title">Safety at work and immigration</div>
+      <div class="pub-authors">Belles-Obrero, C., Martin Bassols, N., &amp; Vall Castello, J.</div>
+      <div class="pub-journal">Journal of Population Economics (2021), 34, 167–221</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(7)</div>
+      <div class="pub-title">Bar opening hours, alcohol consumption and workplace accidents</div>
+      <div class="pub-authors">Martin Bassols, N., &amp; Castello, J. V.</div>
+      <div class="pub-journal">Labour Economics (2018), 53, 172–181</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(8)</div>
+      <div class="pub-title">Socioeconomic inequalities in health and the use of healthcare services in Catalonia: analysis of individual data of 7.5 million residents</div>
+      <div class="pub-authors">Garcia-Altees, A., Ruiz-Munoz, D., Colls, C., Mias, M., &amp; Martin Bassols, N.</div>
+      <div class="pub-journal">Journal of Epidemiology and Community Health (2018), 72(10), 871–879</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(9)</div>
+      <div class="pub-title">Effects of the great recession on drugs consumption in Spain</div>
+      <div class="pub-authors">Martin Bassols, N., &amp; Vall, J.</div>
+      <div class="pub-journal">Economics and Human Biology (2016), 22, 103–106</div>
+    </div>
+  </div>
+
+  <!-- ── WORKING PAPERS ── -->
+  <div id="working" class="section">
+    <h2>Working papers</h2>
+
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">Examining the health legacy of the NHS: infant mortality, genetic endowment, and adult health</div>
+      <div class="pub-authors">Joint with Pietro Biroli, Elisabetta de Cao, Massimo Anelli, Silvia Mendolia, Stephanie von Hinke</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2602.03751" target="_blank" rel="noopener">Paper</a>
+        <a href="https://drive.google.com/file/d/1jyk9zPh7dtVqOmRff890iwNiP4uH1vA2/view?usp=sharing" target="_blank" rel="noopener">Q&amp;A</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Compulsory licenses on HIV drugs – impact on consumption and prices</div>
+      <div class="pub-authors">Joint with Miquel Serra Burriel and Kerstin Noelle Vokinger
+        <span class="badge">R&amp;R · Health Economics</span>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(3)</div>
+      <div class="pub-title">Sources of inequality at birth: the interplay between genes and parental socioeconomic status</div>
+      <div class="pub-authors">Joint with Pietro Biroli, Pia Arce, Andries T. Marees, Stephanie von Hinke, Hans Van Kippersluis, Cornelius A. Rietveld, Kevin Thom, Jeremy Vollen, and Titus Galama</div>
+      <div class="pub-journal">Draft upon request</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(4)</div>
+      <div class="pub-title">The impact of mental health on labour market outcomes: new evidence from genetic markers</div>
+      <div class="pub-authors">Joint with Sonja De New, John P. De New, Clement Wong, and Danusha Jayawardana</div>
+      <div class="pub-journal">Draft upon request</div>
+    </div>
+  </div>
+
+  <!-- ── WORK IN PROGRESS ── -->
+  <div id="progress" class="section">
+    <h2>Work in progress</h2>
+
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">The effect of educational reforms on assortative mating</div>
+      <div class="pub-authors">With Tomeu Lopez-Nieto Vietch</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Estimating the causal impact of the CHIP program on epigenetic ageing</div>
+      <div class="pub-authors">With Pietro Biroli, Elisabetta De Cao, and Lauren Schmitz</div>
+    </div>
+  </div>
+
+  <!-- ── CV ── -->
+  <div id="cv" class="section">
+    <h2>CV</h2>
+    <div class="cv-placeholder">
+      <p>Upload your CV as <strong>cv.pdf</strong> to your GitHub repository,<br>then update the link below.</p>
+      <!-- Update href to "cv.pdf" once you've uploaded it -->
+      <a href="cv.pdf" target="_blank">Download CV (PDF)</a>
+    </div>
+  </div>
+
+  <footer>
+    Nicolau Martin-Bassols &nbsp;·&nbsp; <a href="mailto:nicolau.martin@unibo.it">nicolau.martin@unibo.it</a>
+  </footer>
+
+</div>
+<script>
+  function show(id, el) {
+    document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
+    document.querySelectorAll('#nav a').forEach(function(a){ a.classList.remove('active'); });
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+</script>
+</body>
+</html>
