@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolau Martin-Bassols – Economist</title>
+  <meta name="description" content="Nicolau Martin-Bassols – Post-doctoral Research Fellow at the University of Bologna. Applied microeconomics, health economics, social genomics." />
+  <meta name="keywords" content="Nicolau Martin-Bassols, economist, health economics, microeconomics, social genomics, University of Bologna, Monash University" />
+  <meta name="author" content="Nicolau Martin-Bassols" />
+  <meta property="og:title" content="Nicolau Martin-Bassols" />
+  <meta property="og:description" content="Post-doctoral Research Fellow at the University of Bologna. Applied microeconomics, health economics, social genomics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nicomartin1992.github.io/" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+    a { color: #1a5fa8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page { max-width: 780px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    nav { display: flex; gap: 0.25rem; margin-bottom: 2.5rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    nav a { font-size: 14px; color: #555; padding: 4px 10px; border-radius: 4px; cursor: pointer; transition: background 0.15s, color 0.15s; }
+    nav a:hover { background: #f3f3f3; color: #111; text-decoration: none; }
+    nav a.active { background: #1a1a1a; color: #fff; }
+    .hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
+    .avatar { width: 110px; height: 110px; border-radius: 50%; flex-shrink: 0; border: 1px solid #ddd; overflow: hidden; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-text h1 { font-size: 22px; font-weight: 600; margin-bottom: 3px; }
+    .hero-text .role { font-size: 14px; color: #666; margin-bottom: 14px; }
+    .hero-text .bio { font-size: 15px; color: #222; }
+    .hero-text .address { font-size: 13px; color: #888; margin-top: 10px; }
+    .contact-row { display: flex; gap: 1rem; margin-top: 10px; flex-wrap: wrap; }
+    .contact-row a { font-size: 13px; }
+    .section { display: none; }
+    .section.active { display: block; }
+    h2 { font-size: 19px; font-weight: 600; margin-bottom: 1.25rem; }
+    .pub { padding: 14px 0; border-bottom: 1px solid #efefef; }
+    .pub:last-child { border-bottom: none; }
+    .pub-number { font-size: 12px; color: #aaa; margin-bottom: 3px; }
+    .pub-title { font-size: 15px; font-weight: 500; color: #111; line-height: 1.5; }
+    .pub-authors { font-size: 13px; color: #555; margin-top: 3px; }
+    .pub-journal { font-size: 13px; color: #333; font-style: italic; margin-top: 2px; }
+    .pub-links { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .pub-links a { font-size: 12px; color: #1a5fa8; background: #eaf1fb; padding: 3px 10px; border-radius: 4px; border: 1px solid #c8dcf0; }
+    .pub-links a:hover { background: #d2e5f7; text-decoration: none; }
+    .abstract-btn { font-size: 12px; background: #f3f3f3; color: #444; border: 1px solid #ddd; padding: 3px 10px; border-radius: 4px; cursor: pointer; transition: background 0.15s; }
+    .abstract-btn:hover { background: #e8e8e8; }
+    .abstract-box { display: none; margin-top: 10px; padding: 12px 14px; background: #f9f9f9; border-left: 3px solid #c8dcf0; border-radius: 0 4px 4px 0; font-size: 13.5px; color: #333; line-height: 1.7; }
+    .abstract-box.open { display: block; }
+    .badge { display: inline-block; font-size: 11px; background: #fff7e6; color: #8a5a00; border: 1px solid #f0d080; padding: 1px 7px; border-radius: 4px; margin-left: 6px; vertical-align: middle; font-style: normal; }
+    .cv-block { background: #f9f9f9; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem; }
+    .cv-block a { display: inline-block; background: #1a1a1a; color: #fff; padding: 8px 20px; border-radius: 6px; font-size: 14px; white-space: nowrap; }
+    .cv-block a:hover { background: #333; text-decoration: none; }
+    .cv-block p { font-size: 14px; color: #555; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #efefef; font-size: 12px; color: #aaa; text-align: center; }
+    @media (max-width: 520px) { .hero { flex-direction: column; } .avatar { width: 80px; height: 80px; } .cv-block { flex-direction: column; } }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <nav id="nav">
+    <a class="active" onclick="show('home', this)">About</a>
+    <a onclick="show('pubs', this)">Publications</a>
+    <a onclick="show('working', this)">Working papers</a>
+    <a onclick="show('progress', this)">Work in progress</a>
+    <a onclick="show('cv', this)">CV</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <div id="home" class="section active">
+    <div class="hero">
+      <div class="avatar"><img src="photo.jpg" alt="Nicolau Martin-Bassols" /></div>
+      <div class="hero-text">
+        <h1>Nicolau Martin-Bassols</h1>
+        <p class="role">Post-doctoral Research Fellow · Department of Economics · University of Bologna</p>
+        <p class="bio">I obtained my PhD from Monash University's Centre of Health Economics in 2022. I specialize in applied microeconomics and micro-econometrics, with a focus on health, labor economics, and social genomics. My research explores the impact of genetics, familial investments, and policy interventions on the construction of health and human capital, as well as economic disparities.</p>
+        <p class="address">Piazza Antoni Scaravilli, 2, 40126 Bologna, Italy</p>
+        <div class="contact-row">
+          <a href="mailto:nicolau.martin@unibo.it">nicolau.martin@unibo.it</a>
+          <a href="https://github.com/nicomartin1992" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS -->
+  <div id="pubs" class="section">
+    <h2>Publications</h2>
+
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">Socioeconomic advantage as protection from genetic mental health risks</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, J. P., de New, S. C., &amp; Wong, C. C.</div>
+      <div class="pub-journal">Social Science &amp; Medicine (2025), 118845</div>
+      <div class="pub-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0277953625011761" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">The burden of mental illness is unequally distributed, with higher prevalence among socioeconomically disadvantaged individuals and those with a genetic predisposition to mental illness. Using data from the U.S. Health and Retirement Study (HRS), we examine whether childhood socioeconomic status (SES) moderates the association between genetic predisposition—measured using polygenic indexes (PGIs)—and adult mental health. We document a childhood SES gradient in the association between genetic risk and anxiety, but not depression. Specifically, individuals who report having been financially well-off during childhood or whose fathers held relatively higher prestige occupations exhibit a substantially weaker association between the anxiety PGI and anxiety symptoms in adulthood. This pattern is not explained by differences in parenting style, parent–child relationship quality, or exposure to childhood stressors and traumas. These findings contribute to the literature on gene–environment interplay by documenting heterogeneity in the association between genetic predisposition and mental health outcomes across socioeconomic contexts. To the extent that financial resources moderate the association between genetic risk and anxiety, early-life economic conditions may be associated with differences in the manifestation of genetic predispositions, with implications for understanding inequalities in mental health.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Drug prices after patent expirations in high-income countries and implications for cost-effectiveness analyses</div>
+      <div class="pub-authors">Serra-Burriel, M., Martin-Bassols, N., Perényi, G., &amp; Vokinger, K. N.</div>
+      <div class="pub-journal">JAMA Health Forum (2024), Vol. 5, No. 8, e242530</div>
+      <div class="pub-links">
+        <a href="https://jamanetwork.com/journals/jama-health-forum/fullarticle/2822169" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">Understanding how patent expirations affect drug prices is crucial because price changes directly inform accurate cost-effectiveness assessments. This study investigates the association between patent expirations and drug prices in 8 high-income countries and evaluates how the changes affect cost-effectiveness assessments. Using data from over 500 drugs losing patent protection between 2011 and 2020 in Australia, Canada, France, Germany, Japan, Switzerland, UK, and US, we find sizable price decreases associated with patent loss, which varied substantially across countries. The fastest price declines were observed in the US: 32% in year 1 after patent expiration and 82% over the following 8 years. Estimates for other nations ranged from a decrease of 64% in Australia to 18% in Switzerland over 8 years. Incorporating these estimates into simulated cost-effectiveness models showed that depending on the scenario (generic or patented comparator), large differences in incremental cost-effectiveness ratios arise when omitting post-patent price dynamics.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(3)</div>
+      <div class="pub-title">Effect of in utero exposure to air pollution on adulthood hospitalizations</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, S. C., Shields, M. A., &amp; Johnston, D. W.</div>
+      <div class="pub-journal">Journal of Urban Health (2024), 101(1), 92–108</div>
+      <div class="pub-links">
+        <a href="https://link.springer.com/article/10.1007/s11524-023-00803-1" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">Empirical analyses have demonstrated that individuals exposed to severe air pollution in utero have worse health outcomes during childhood. However, there is little evidence on the long-term health impacts of air pollution exposure. The objective of this paper is to estimate the effect of in utero exposure to the Great London Smog of 1952 (GLS) on five health outcomes identified through a scoping review to be those most likely affected: respiratory, circulatory, neoplasms, mental health, and nervous system conditions. We use the GLS, an extreme air pollution event in December 1952, as a quasi-natural experiment. Data from the UK Biobank is analysed for a cohort of participants born from December 1952 to July 1956. Our primary focus is hospitalization events between 1997 and 2020 (corresponding to ages 40 to 69). The analytical sample comprised 36,281 individuals. A positive effect on adulthood hospitalizations due to respiratory conditions was observed: if exposed to the GLS in utero, the probability of at least one respiratory health-related hospitalization between 1997 and 2020 increased by 2.58 percentage points (95% CI 0.08, 4.30, p = 0.03), a 23% increase relative to the sample mean. Small effects were found for all other outcomes. This study found that a 5-day pollution exposure event while in utero significantly increased respiratory-related hospitalizations at ages 40 to 69 but had no impact on hospitalizations due to circulatory, neoplasms, mental health, and nervous system conditions.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(4)</div>
+      <div class="pub-title">Risky and non-risky financial investments and cognition</div>
+      <div class="pub-authors">Martin-Bassols, N.</div>
+      <div class="pub-journal">Journal of Economic Psychology (2023), 102677</div>
+      <div class="pub-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0167487023000788" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">This paper investigates how old-age cognitive deterioration affects financial decision making, distinguishing between risky and non-risky financial investments. Using longitudinal data from the English Longitudinal Study of Ageing (ELSA), the paper examines whether individuals with higher or declining cognitive ability differ in their holdings of risky assets (such as stocks) versus non-risky assets (such as savings accounts), and how they respond to stock market fluctuations. The findings shed light on how cognitive decline at older ages can lead to sub-optimal financial decisions, with implications for financial well-being in retirement.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(5)</div>
+      <div class="pub-title">Cognitive activity at work and the risk of dementia</div>
+      <div class="pub-authors">Martin-Bassols, N., de New, S. C., Johnston, D. W., &amp; Shields, M. A.</div>
+      <div class="pub-journal">Health Economics (2023), 32(7), 1561–1580</div>
+      <div class="pub-links">
+        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hec.4679" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">Dementia prevalence is projected to rise steeply in coming decades, producing tremendous burdens on families, and health and social services. Motivated by the need for further robust evidence on modifiable risk factors, we investigate the relationship between cognitive activity at work and later-life dementia. Using data from the US Health and Retirement Study matched to the O*NET occupational database, we find that a one standard deviation increase in the cognitive activity associated with one's longest held occupation is associated with a 0.9 percentage point reduction in (predicted) dementia, or a 24% reduction relative to the mean. This relationship is consistently found across model specifications and robustness tests. When controlling for individual fixed-effects we find that the association between dementia and work cognitive activity increases with age. Overall, our results provide some evidence in support of the inclusion of cognitive activity at work as a recognized modifiable risk factor for dementia.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(6)</div>
+      <div class="pub-title">Safety at work and immigration</div>
+      <div class="pub-authors">Belles-Obrero, C., Martin Bassols, N., &amp; Vall Castello, J.</div>
+      <div class="pub-journal">Journal of Population Economics (2021), 34, 167–221</div>
+      <div class="pub-links">
+        <a href="https://link.springer.com/article/10.1007/s00148-020-00791-5" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">This paper examines the effect of immigration on workplace safety, an understudied outcome in the literature. We use a novel administrative dataset of the universe of workplace accidents reported in Spain from 2003 to 2015 and follow an instrumental variables (IV) strategy based on the distribution of early migrants across provinces. Our results show that the massive inflow of immigrants between 2003 and 2009 reduced the number of workplace accidents by 10,980 for native workers (7% of the overall reduction during that period). This decline in workplace accidents is driven by Spanish-born workers shifting away from manual occupations to occupations involving more interpersonal interactions. Immigrant flows during the economic crisis (2010–2015) had no impact on natives' workplace safety. The scarcity of jobs during that period may have prevented shifts between occupations. Finally, we find no effects of immigration on the workplace safety of immigrants.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(7)</div>
+      <div class="pub-title">Bar opening hours, alcohol consumption and workplace accidents</div>
+      <div class="pub-authors">Martin Bassols, N., &amp; Castello, J. V.</div>
+      <div class="pub-journal">Labour Economics (2018), 53, 172–181</div>
+      <div class="pub-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0927537118300393" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">It is widely proven that individuals that consume more alcohol are also much more likely to suffer from a working accident. However, this observed correlation may be due to other unobserved factors affecting both alcohol consumption and working accidents (such as the type of job). In this paper we establish the causal impact of alcohol consumption on workplace accidents by analysing the effect of a policy that reduced bar opening hours in Spain. We also study the impact of this policy on several proxies of alcohol consumption: household expenditure in bars, self-assessed alcohol consumption, and hospitalizations due to excessive alcohol consumption. Our results show that reducing bar opening hours causes a decrease in both working accidents and alcohol consumption. We provide the first evidence on the existence of spillover effects of restricting the timing of alcohol sales on the probability of suffering from a working accident. We also show that these effects are heterogeneous across gender and economic sectors.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(8)</div>
+      <div class="pub-title">Socioeconomic inequalities in health and the use of healthcare services in Catalonia: analysis of individual data of 7.5 million residents</div>
+      <div class="pub-authors">Garcia-Altees, A., Ruiz-Munoz, D., Colls, C., Mias, M., &amp; Martin Bassols, N.</div>
+      <div class="pub-journal">Journal of Epidemiology and Community Health (2018), 72(10), 871–879</div>
+      <div class="pub-links">
+        <a href="https://jech.bmj.com/content/72/10/871.abstract" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">This study analyses socioeconomic inequalities in health status and healthcare utilization using individual-level administrative data on 7.5 million residents of Catalonia, Spain. Using a comprehensive linked dataset covering the entire regional population, the authors document the extent and nature of socioeconomic gradients in both health outcomes and use of different types of healthcare services. The findings reveal persistent inequities across socioeconomic groups in both health and service utilization, with important implications for public health policy and resource allocation.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(9)</div>
+      <div class="pub-title">Effects of the great recession on drugs consumption in Spain</div>
+      <div class="pub-authors">Martin Bassols, N., &amp; Vall, J.</div>
+      <div class="pub-journal">Economics and Human Biology (2016), 22, 103–106</div>
+      <div class="pub-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1570677X16300132" target="_blank" rel="noopener">Journal</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">This paper presents evidence on how the consumption of legal and illegal drugs has changed in response to the Great Recession in Spain. We use a large scale survey from 2005 to 2011 to analyze the association between changes in local economic conditions and drug consumption among individuals aged 15–64. Although Spain was one of the countries hardest hit by the economic crisis, we find heterogeneous effects of the recession on different types of substance use, reflecting both income effects and changes in stress and mental wellbeing during the downturn.</div>
+    </div>
+  </div>
+
+  <!-- WORKING PAPERS -->
+  <div id="working" class="section">
+    <h2>Working papers</h2>
+
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">Tracing the genetic footprints of the UK National Health Service</div>
+      <div class="pub-authors">Joint with Pietro Biroli, Elisabetta de Cao, Massimo Anelli, Silvia Mendolia, Stephanie von Hinke</div>
+      <div class="pub-links">
+        <a href="https://arxiv.org/abs/2602.03751" target="_blank" rel="noopener">Paper</a>
+        <a href="https://drive.google.com/file/d/1jyk9zPh7dtVqOmRff890iwNiP4uH1vA2/view?usp=sharing" target="_blank" rel="noopener">Q&amp;A</a>
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">The establishment of the UK National Health Service (NHS) in July 1948 was one of the most consequential health policy interventions of the twentieth century, providing universal and free access to medical care and substantially expanding maternal and infant health services. In this paper, we estimate the causal effect of the NHS introduction on early-life mortality and we test whether survival is selective. We adopt a regression discontinuity design under local randomization, comparing individuals born just before and just after July 1948. Leveraging newly digitized weekly death records, we document a significant decline in stillbirths and infant mortality following the introduction of the NHS, the latter driven primarily by reductions in deaths from congenital conditions and diarrhea. We then use polygenic indexes (PGIs), fixed at conception, to track changes in population composition, showing that cohorts born at or after the NHS introduction exhibit higher PGIs associated with continued positive outcomes.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Compulsory licenses on HIV drugs – impact on consumption and prices</div>
+      <div class="pub-authors">Joint with Miquel Serra Burriel and Kerstin Noelle Vokinger <span class="badge">R&amp;R · Health Economics</span></div>
+      <div class="pub-links">
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">Compulsory licensing is a legal mechanism that allows governments to authorize the use of patented medicines without the owner's consent, subject to conditions and compensation, in order to address public health needs. Despite its policy relevance and increasing use, empirical evidence on its market effects remains limited. This study examines the association between compulsory licensing and the commercial accessibility and affordability of HIV medications across 11 countries from 2002 to 2022. We combine quarterly data on drug sales and prices from IQVIA with implementation dates from the TRIPS Flexibilities Database, focusing on 23 HIV drugs subject to at least one compulsory license. Using a staggered difference-in-differences design, we estimate the average treatment effect on the treated (ATT) of compulsory licensing on drug consumption and prices, under a parallel trends assumption. We find a meaningful increase in retail and hospital sales following the implementation of compulsory licenses, amounting to approximately 21% of a standard deviation in the countries that implemented them. In addition, we estimate a reduction in prices of approximately 19% of a standard deviation.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(3)</div>
+      <div class="pub-title">Sources of inequality at birth: the interplay between genes and parental socioeconomic status</div>
+      <div class="pub-authors">Joint with Pietro Biroli, Pia Arce, Andries T. Marees, Stephanie von Hinke, Hans Van Kippersluis, Cornelius A. Rietveld, Kevin Thom, Jeremy Vollen, and Titus Galama · <em>Draft upon request</em></div>
+      <div class="pub-links">
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">The start of a human's life can be characterized by two lotteries: that of your genes (nature) and that of the family you were born into (nurture). These lotteries set in motion a trajectory, from birth onward, in health and human capital formation. Leveraging three longitudinal social-science datasets — the Health and Retirement Study (HRS), the Wisconsin Longitudinal Study (WLS), and the English Longitudinal Study of Aging (ELSA) — containing rich genotypic and phenotypic information, we systematically analyze the relationship between an individual's genetic predisposition towards a trait (genotype), the socioeconomic status (SES) of the families they grew up in, and their actual trait in adulthood (phenotype). We proxy the individual's genetic predisposition to a trait by polygenic indexes (PGI) and the SES of the families by a latent factor of parental SES, constructed from parental education and the father's occupational status. We then investigate how genetic predispositions, socioeconomic background, and their interaction contribute to later-life outcomes across a range of forty-five socioeconomic, anthropometric, health, behavioral, and personality traits. We find strong genetic and socioeconomic associations with these phenotypes but no evidence of sizable gene-environment interactions.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-number">(4)</div>
+      <div class="pub-title">The impact of mental health on labour market outcomes: new evidence from genetic markers</div>
+      <div class="pub-authors">Joint with Sonja De New, John P. De New, Clement Wong, and Danusha Jayawardana · <em>Draft upon request</em></div>
+      <div class="pub-links">
+        <button class="abstract-btn" onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract-box">The burden of mental illness is unequally distributed, with higher prevalence among socioeconomically disadvantaged individuals and those with a genetic predisposition to mental illness. Using data from the U.S. Health and Retirement Study (HRS), we examine whether childhood socioeconomic status (SES) moderates the association between genetic predisposition — measured using polygenic indexes (PGIs) — and adult mental health. We document a childhood SES gradient in the association between genetic risk and anxiety, but not depression. Specifically, individuals who report having been financially well-off during childhood or whose fathers held high-prestige occupations exhibit a substantially weaker association between the anxiety PGI and anxiety symptoms in adulthood. This pattern is not explained by differences in parenting style, parent–child relationship quality, or exposure to childhood stressors and traumas. These findings contribute to the literature on gene–environment interplay by documenting heterogeneity in the association between genetic predisposition and mental health outcomes across socioeconomic contexts. To the extent that financial resources moderate the association between genetic risk and anxiety, early-life economic conditions may be associated with differences in the manifestation of genetic predispositions, with implications for understanding inequalities in mental health.</div>
+    </div>
+  </div>
+
+  <!-- WORK IN PROGRESS -->
+  <div id="progress" class="section">
+    <h2>Work in progress</h2>
+    <div class="pub">
+      <div class="pub-number">(1)</div>
+      <div class="pub-title">The effect of educational reforms on assortative mating</div>
+      <div class="pub-authors">With Tomeu Lopez-Nieto Vietch</div>
+    </div>
+    <div class="pub">
+      <div class="pub-number">(2)</div>
+      <div class="pub-title">Estimating the causal impact of the CHIP program on epigenetic ageing</div>
+      <div class="pub-authors">With Pietro Biroli, Elisabetta De Cao, and Lauren Schmitz</div>
+    </div>
+  </div>
+
+  <!-- CV -->
+  <div id="cv" class="section">
+    <h2>CV</h2>
+    <div class="cv-block">
+      <a href="https://drive.google.com/file/d/1aJ_zssVjttN2chPWGUY4MvCUBere2dF0/view?usp=sharing" target="_blank" rel="noopener">Download CV (PDF)</a>
+      <p>Full curriculum vitae including publications, working papers, conference presentations, and academic positions.</p>
+    </div>
+  </div>
+
+  <footer>
+    Nicolau Martin-Bassols &nbsp;·&nbsp; <a href="mailto:nicolau.martin@unibo.it">nicolau.martin@unibo.it</a>
+  </footer>
+
+</div>
+<script>
+  function show(id, el) {
+    document.querySelectorAll('.section').forEach(function(s){ s.classList.remove('active'); });
+    document.querySelectorAll('#nav a').forEach(function(a){ a.classList.remove('active'); });
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+  function toggleAbstract(btn) {
+    var box = btn.closest('.pub').querySelector('.abstract-box');
+    var isOpen = box.classList.toggle('open');
+    btn.textContent = isOpen ? 'Hide abstract' : 'Abstract';
+  }
+</script>
+</body>
+</html>
